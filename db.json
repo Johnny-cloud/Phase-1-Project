@@ -1,18 +1,116 @@
 {
     "songs" : {
         "trending" : [
-            {  
-                 "id" : 1,
-                "artist" : "SZA",
-                "title" : "Kill Bill",
-                "image" : "https://upload.wikimedia.org/wikipedia/en/thumb/6/6c/SZA_-_Kill_Bill.png/220px-SZA_-_Kill_Bill.png"
-            },
-            {
-                "id" : 2,
-                "artist" : "",
-                "title" : "Die For You - Remix",
-                "image" : ""
-            }
+                {   "id":1,
+                    "rank": "1",
+                    "title": "Butter",
+                    "artist": "BTS",
+                    "weeks at no.1": "1",
+                    "award": false,
+                    "last week": "7",
+                    "peak position": "1",
+                    "weeks on chart": "2",
+                    "detail": "up"
+                  },
+                 {  
+                    "id":2,
+                    "rank": "2",
+                    "title": "Rock With You",
+                    "artist": "SEVENTEEN",
+                    "award": false,
+                    "last week": "None",
+                    "peak position": "2",
+                    "weeks on chart": "1",
+                    "detail": "new"
+                  },
+                  { 
+                    "id":3,
+                    "rank": "3",
+                    "title": "Permission To Dance",
+                    "artist": "BTS",
+                    "award": false,
+                    "last week": "1",
+                    "peak position": "1",
+                    "weeks on chart": "2",
+                    "detail": "down"
+                  },
+                  {
+                    "id":4,
+                    "rank": "4",
+                    "title": "Money",
+                    "artist": "Lisa",
+                    "award": false,
+                    "last week": "2",
+                    "peak position": "2",
+                    "weeks on chart": "2",
+                    "detail": "down"
+                  },
+                  { 
+                    "id":5,
+                    "rank": "5",
+                    "title": "Lalisa",
+                    "artist": "Lisa",
+                    "award": false,
+                    "last week": "3",
+                    "peak position": "3",
+                    "weeks on chart": "2",
+                    "detail": "down"
+                  },
+                {   
+                    "id":6,
+                    "rank": "6",
+                    "title": "Savage",
+                    "artist": "aespa",
+                    "award": false,
+                    "last week": "6",
+                    "peak position": "6",
+                    "weeks on chart": "2",
+                    "detail": "same"
+                  },
+                {
+                    "id":7,
+                    "rank": "7",
+                    "title": "Spaceman",
+                    "artist": "Mew Suppasit",
+                    "award": false,
+                    "last week": "None",
+                    "peak position": "7",
+                    "weeks on chart": "1",
+                    "detail": "new"
+                  },
+                 {
+                    "id":8,
+                    "rank": "8",
+                    "title": "Tamed-Dashed",
+                    "artist": "ENHYPEN",
+                    "award": false,
+                    "last week": "5",
+                    "peak position": "5",
+                    "weeks on chart": "2",
+                    "detail": "down"
+                  },
+                  {
+                    "id":9,
+                    "rank": "9",
+                    "title": "My Universe",
+                    "artist": "Coldplay x BTS",
+                    "award": false,
+                    "last week": "4",
+                    "peak position": "4",
+                    "weeks on chart": "2",
+                    "detail": "down"
+                  },
+                   {
+                    "id":10,
+                    "rank": "10",
+                    "title": "Dynamite",
+                    "artist": "BTS",
+                    "award": false,
+                    "last week": "12",
+                    "peak position": "10",
+                    "weeks on chart": "2",
+                    "detail": "up"
+                  }
 
         ],
         "new" : [
