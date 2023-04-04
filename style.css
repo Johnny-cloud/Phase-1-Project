@@ -1,6 +1,7 @@
 body{
-    background-color: lightgray;
-    color: black;
+    margin: 0px;
+    background-color: rgb(137, 125, 125);
+    color: rgb(33, 1, 1);
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -11,7 +12,9 @@ body{
 } */
 
 nav{
+    background-color: black;
     position: fixed;
+    height: 100%;
     top: 0;
     left: 0;
     display: flex;
@@ -19,7 +22,7 @@ nav{
     justify-content: center;
     flex-wrap: wrap;
     font-size: 20px;
-    width: 20%;
+    width: 350px;
     margin: auto;
 }
 ul{
@@ -36,11 +39,12 @@ li{
 }
 li > a{
     text-decoration: none;
-    color: rgb(27, 28, 29);
+    color:azure;
     font-size: 20px;
 }
-li > a:hover {
-    background-color: darkgray;
+li > a:hover, input[type="submit"]:hover {
+    background-color: rgb(6, 159, 118);
+    color: aliceblue;
     border-radius : 10px;
     padding: 10px;
 }
@@ -51,21 +55,30 @@ input{
     padding: 5px;
 }
 main{
-    top: 0;
+    margin-top: 0px;
     width: 100%;
     height:max-content;
-    margin-left: 300px; /* Same as the width of the sidebar */
-    padding: 0px 10px;
-    background-color: rgb(166, 162, 162);
+    margin-left: 350px; /* Same as the width of the sidebar */
+    background-color: rgb(23, 20, 20);
+    color:aliceblue;
     text-align: center;
 }
 section{
     padding-bottom: 600px;
 
 }
-#home-images, #trending-images, #new-images, #top-100-images, #liked-images{
+#home-images, #trending-images, #new-images, #top-100-images, #artists-images{
     width: 70%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    height: auto;
 } 
+#home{
+    width: 100%;
+    background: url("./images/headPhones1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    padding-bottom: 800px;
+}

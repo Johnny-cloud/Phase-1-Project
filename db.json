@@ -1,5 +1,4 @@
-{
-    "songs" : {
+{   
         "trending" : [
                 {   "id":1,
                     "rank": "1",
@@ -10,7 +9,8 @@
                     "last week": "7",
                     "peak position": "1",
                     "weeks on chart": "2",
-                    "detail": "up"
+                    "detail": "up",
+                    "image":""
                   },
                  {  
                     "id":2,
@@ -21,7 +21,8 @@
                     "last week": "None",
                     "peak position": "2",
                     "weeks on chart": "1",
-                    "detail": "new"
+                    "detail": "new",
+                    "image":""
                   },
                   { 
                     "id":3,
@@ -32,7 +33,8 @@
                     "last week": "1",
                     "peak position": "1",
                     "weeks on chart": "2",
-                    "detail": "down"
+                    "detail": "down",
+                    "image":""
                   },
                   {
                     "id":4,
@@ -43,7 +45,8 @@
                     "last week": "2",
                     "peak position": "2",
                     "weeks on chart": "2",
-                    "detail": "down"
+                    "detail": "down",
+                    "image":""
                   },
                   { 
                     "id":5,
@@ -54,7 +57,8 @@
                     "last week": "3",
                     "peak position": "3",
                     "weeks on chart": "2",
-                    "detail": "down"
+                    "detail": "down",
+                    "image":""
                   },
                 {   
                     "id":6,
@@ -65,7 +69,8 @@
                     "last week": "6",
                     "peak position": "6",
                     "weeks on chart": "2",
-                    "detail": "same"
+                    "detail": "same",
+                    "image":""
                   },
                 {
                     "id":7,
@@ -76,7 +81,8 @@
                     "last week": "None",
                     "peak position": "7",
                     "weeks on chart": "1",
-                    "detail": "new"
+                    "detail": "new",
+                    "image":""
                   },
                  {
                     "id":8,
@@ -87,7 +93,8 @@
                     "last week": "5",
                     "peak position": "5",
                     "weeks on chart": "2",
-                    "detail": "down"
+                    "detail": "down",
+                    "image":""
                   },
                   {
                     "id":9,
@@ -98,7 +105,8 @@
                     "last week": "4",
                     "peak position": "4",
                     "weeks on chart": "2",
-                    "detail": "down"
+                    "detail": "down",
+                    "image":""
                   },
                    {
                     "id":10,
@@ -109,10 +117,12 @@
                     "last week": "12",
                     "peak position": "10",
                     "weeks on chart": "2",
-                    "detail": "up"
+                    "detail": "up",
+                    "image":""
                   }
 
         ],
+    
         "new" : [
             {   
                 "id" : 1,
@@ -125,6 +135,54 @@
                 "artist" : "Jimin",
                 "title" : "Like Crazy",
                 "image" :"https://charts-static.billboard.com/img/2016/03/ji-min-7g4-344x344.jpg"
+            },
+            {
+                "id" : 3,
+                "artist" : "",
+                "title" : "",
+                "image" :""
+            },
+            {
+                "id" : 4,
+                "artist" : "",
+                "title" : "",
+                "image" :""
+            },
+            {
+                "id" : 5,
+                "artist" : "",
+                "title" : "",
+                "image" :""
+            },
+            {
+                "id" : 6,
+                "artist" : "",
+                "title" : "",
+                "image" :""
+            },
+            {
+                "id" : 7,
+                "artist" : "",
+                "title" : "",
+                "image" :""
+            },
+            {
+                "id" : 8,
+                "artist" : "",
+                "title" : "",
+                "image" :""
+            },
+            {
+                "id" : 9,
+                "artist" : "",
+                "title" : "",
+                "image" :""
+            },
+            {
+                "id" : 10,
+                "artist" : "",
+                "title" : "",
+                "image" :""
             }
         ],
         "top-100" : [
@@ -241,22 +299,59 @@
                 
 
         ],
-        "liked" : [
-            {   
-                "id" : 1,
-                "artist" : "Miley Cyrus",
-                "title" : "Flowers",
-                "image" : "https://cdn.shopify.com/s/files/1/0522/1610/3083/articles/MILEY_CYRUS_FLOWERS_900x.png?v=1674751436"
-            }
 
-
-        ]
-    },
     "artist" : [
         {   
             "id" : 1,
-            "name" : ""
+            "name" : "Bruno mars",
+            "image":""
+        },
+        {
+            "id":2,
+            "name":"Ariana Grande",
+            "image":""
+        },
+        {
+            "id":3,
+            "name": "Beyonce Knowles",
+            "image":""
+        },
+        {
+            "id":4,
+            "name":"Khaligraph Jones",
+            "image":""
+        },
+        {
+            "id":5,
+            "name": "Fathermo",
+            "image":""
+        },
+        {
+            "id":6,
+            "name":"Rayvanny",
+            "image":""
+        },
+        {
+            "id":7,
+            "name":"Ada Ehi",
+            "image":""
+        },
+        {
+            "id":8,
+            "name" : "Halsey",
+            "image":""
+        },
+        {
+            "id":9,
+            "name":"Sinach",
+            "image":""
+        },
+        {
+            "id":10,
+            "name":"Ayra Starr",
+            "image":""
         }
+
 
     ]
 }
