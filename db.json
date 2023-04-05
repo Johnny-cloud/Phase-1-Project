@@ -3,61 +3,61 @@
                 {   "id":1,
                     "title": "Butter",
                     "artist": "BTS",
-                    "image":""
+                    "image":"https://wallpapercave.com/dwp1x/wp9245978.jpg"
                   },
                  {  
                     "id":2,
                     "title": "Rock With You",
                     "artist": "SEVENTEEN",
-                    "image":""
+                    "image":"https://image.kpopmap.com/2021/10/Seventeen-comeback-press-conference-kpopmap-group.jpg"
                   },
                   { 
                     "id":3,
                     "title": "Permission To Dance",
                     "artist": "BTS",
-                    "image":""
+                    "image":"https://wallpaperaccess.com/full/6260451.jpg"
                   },
                   {
                     "id":4,
                     "title": "Money",
                     "artist": "Lisa",
-                    "image":""
+                    "image":"https://wallpapercave.com/dwp1x/wp10404595.jpg"
                   },
                   { 
                     "id":5,
-                    "title": "Lalisa",
-                    "artist": "Lisa",
-                    "image":""
+                    "title": "Nobody",
+                    "artist": "Bien ft Darassa",
+                    "image":"https://bekaboy.com/wp-content/uploads/2023/02/Darassa-Ft-Bien-%E2%80%93-No-Body.jpg"
                   },
                 {   
                     "id":6,
-                    "title": "Savage",
-                    "artist": "aespa",
-                    "image":""
+                    "title": "Sability",
+                    "artist": "Ayra Starr",
+                    "image":"https://i.ytimg.com/vi/6xC7azFBOBw/hqdefault.jpg"
                   },
                 {
                     "id":7,
-                    "title": "Spaceman",
-                    "artist": "Mew Suppasit",
-                    "image":""
+                    "title": "Psychic",
+                    "artist": "Chris Brown",
+                    "image":"https://i1.sndcdn.com/artworks-yf8lpRwlwRzOqGqW-mKyslw-t500x500.jpg"
                   },
                  {
                     "id":8,
-                    "title": "Tamed-Dashed",
-                    "artist": "ENHYPEN",
-                    "image":""
+                    "title": "Eyes closed",
+                    "artist": "Ed Sheeran",
+                    "image":"https://www.yeyebook.com/wp-content/uploads/2023/03/Ed-Sheeran-Eyes-Closed-RID.jpg"
                   },
                   {
                     "id":9,
-                    "title": "My Universe",
-                    "artist": "Coldplay x BTS",
-                    "image":""
+                    "title": "Calm Down",
+                    "artist": "Rhema ft Selena Gomez",
+                    "image":"https://i.ytimg.com/vi/WcIcVapfqXw/maxresdefault.jpg"
                   },
                    {
                     "id":10,
-                    "title": "Dynamite",
-                    "artist": "BTS",
-                    "image":""
+                    "title": "As it was",
+                    "artist": "Harry Styles",
+                    "image":"https://i.ytimg.com/vi/H5v3kku4y6Q/maxresdefault.jpg"
                   }
 
         ],
@@ -77,38 +77,38 @@
             },
             {
                 "id" : 3,
-                "artist" : "",
-                "title" : "",
-                "image" :""
+                "artist" : "Drake, 21 Savage",
+                "title" : "Spin bout you",
+                "image" :"https://i.ytimg.com/vi/T8nbNQpRwNo/maxresdefault.jpg"
             },
             {
                 "id" : 4,
-                "artist" : "",
-                "title" : "",
-                "image" :""
+                "artist" : "Kendrick Lamar",
+                "title" : "Rich Spirit",
+                "image" :"https://i.ytimg.com/vi/toBTPGfurLc/maxresdefault.jpg"
             },
-            {
-                "id" : 5,
-                "artist" : "",
-                "title" : "",
-                "image" :""
-            },
+            { 
+                "id":5,
+                "title": "Nobody",
+                "artist": "Bien ft Darassa",
+                "image":"https://bekaboy.com/wp-content/uploads/2023/02/Darassa-Ft-Bien-%E2%80%93-No-Body.jpg"
+              },
             {
                 "id" : 6,
-                "artist" : "",
-                "title" : "",
-                "image" :""
+                "artist" : "The Weeknd ft Ariana Grande",
+                "title" : "Die for you",
+                "image" :"https://i1.sndcdn.com/artworks-000146007822-1r753h-t500x500.jpg"
             },
             {
                 "id" : 7,
-                "artist" : "",
-                "title" : "",
-                "image" :""
+                "artist" : "Darassa",
+                "title" : "Mind your business",
+                "image" :"https://i.ytimg.com/vi/8qVDDDoT0rY/maxresdefault.jpg"
             },
             {
                 "id" : 8,
-                "artist" : "",
-                "title" : "",
+                "artist" : "Khaligraph Jones ft Harmonize",
+                "title" : "Kwame",
                 "image" :""
             },
             {

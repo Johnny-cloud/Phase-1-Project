@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
         removeBtn.textContent = "Remove";
 
         removeBtn.addEventListener('click', () => {
-            favImgs.removeChild(div);
+            playlistImgs.removeChild(div);
         })
 
         btnDiv.append(removeBtn);
