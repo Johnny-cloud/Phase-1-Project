@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
     let newImgs = document.querySelector("#new-images");
     let top100Imgs = document.querySelector("#top-100-images");
     let artistsImgs = document.querySelector("#artists-images");
+    let favImgs = document.querySelector("#favorites-images");
+    let playlistImgs = document.querySelector("#my-playlist-images");
 
     fetchTrending();
     fetchNew();
@@ -51,15 +53,24 @@ document.addEventListener("DOMContentLoaded", () => {
         let artistP =  document.createElement("p");
         let btnDiv = document.createElement("div");
         let likeBtn = document.createElement("button");
-        let addFavBtn = document.createElement("button");
+        let addToPlaylistBtn = document.createElement("button");
 
         titleP.textContent = song.title;
         img.src = song.image;
         artistP.textContent = song.artist;
         likeBtn.textContent = "Like";
-        addFavBtn.textContent = "Add to Playlist";
+        addToPlaylistBtn.textContent = "Add to Playlist";
+
+        likeBtn.addEventListener('click', () => {
+            addToFavorites(song);
+        })
+
+        addToPlaylistBtn.addEventListener('click', () => {
+            addToPlaylist(song);
+        })
+
         btnDiv.append(likeBtn);
-        btnDiv.append(addFavBtn);
+        btnDiv.append(addToPlaylistBtn);
 
 
 
@@ -92,6 +103,71 @@ document.addEventListener("DOMContentLoaded", () => {
         div.append(artistP);
 
         sectImg.append(div);
+
+    }
+
+    function addToFavorites(song){
+        let div = document.createElement("div");
+        let titleP =  document.createElement("p");
+        let img =  document.createElement("img");
+        let artistP =  document.createElement("p");
+        let btnDiv = document.createElement("div");
+        let removeBtn = document.createElement("button");
+
+        titleP.textContent = song.title;
+        img.src = song.image;
+        artistP.textContent = song.artist;
+        removeBtn.textContent = "Remove";
+
+        removeBtn.addEventListener('click', () => {
+            favImgs.removeChild(div);
+        })
+
+        btnDiv.append(removeBtn);
+
+
+
+        div.className = "song-card";
+        div.background = `url(${img.src})`;
+        btnDiv.className = "like-fav-btns";
+
+        div.append(titleP);
+        div.append(img);
+        div.append(artistP);
+        div.append(btnDiv);
+        favImgs.append(div);
+
+    }
+    function addToPlaylist(song) {
+        let div = document.createElement("div");
+        let titleP =  document.createElement("p");
+        let img =  document.createElement("img");
+        let artistP =  document.createElement("p");
+        let btnDiv = document.createElement("div");
+        let removeBtn = document.createElement("button");
+
+        titleP.textContent = song.title;
+        img.src = song.image;
+        artistP.textContent = song.artist;
+        removeBtn.textContent = "Remove";
+
+        removeBtn.addEventListener('click', () => {
+            favImgs.removeChild(div);
+        })
+
+        btnDiv.append(removeBtn);
+
+
+
+        div.className = "song-card";
+        div.background = `url(${img.src})`;
+        btnDiv.className = "like-fav-btns";
+
+        div.append(titleP);
+        div.append(img);
+        div.append(artistP);
+        div.append(btnDiv);
+        playlistImgs.append(div);
 
     }
 

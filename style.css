@@ -67,7 +67,7 @@ section{
     padding-bottom: 600px;
 
 }
-#home-images, #trending-images, #new-images, #top-100-images, #artists-images{
+#home-images, #trending-images, #new-images, #top-100-images, #artists-images, #favorites-images, #my-playlist-images{
     margin: auto;
     width: 100%;
     display: flex;
@@ -111,10 +111,13 @@ img.artist-img{
 button{
     margin: 10px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 18px;
+    border:none;
+    background-color: black;
+    color:aliceblue;
 }
 button:hover{
-    font-size: 20px;
+    font-size: 21px;
     background-color: red;
     color:white;
 }
