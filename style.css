@@ -94,6 +94,9 @@ section{
     font-size: 18px;
     font-weight: 600;
 }
+.song-card:hover .like-fav-btns{
+    display: block;
+}
 img{
     object-fit: cover;
     width: 100%;
@@ -102,8 +105,16 @@ img{
 img.artist-img{
     border-radius: 50%;
 }
+.like-fav-btns{
+    display: none;
+}
 button{
     margin: 10px;
     border-radius: 10px;
     font-size: 16px;
+}
+button:hover{
+    font-size: 20px;
+    background-color: red;
+    color:white;
 }

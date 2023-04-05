@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         div.className = "song-card";
         div.background = `url(${img.src})`;
+        btnDiv.className = "like-fav-btns";
 
         div.append(titleP);
         div.append(img);
