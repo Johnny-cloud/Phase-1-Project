@@ -1,6 +1,6 @@
 # My Music
 
-**5 April 2023**
+**5 April 2023**\
 **By John Kipruto**
 
 ## About the project
