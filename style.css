@@ -43,8 +43,8 @@ li > a{
     font-size: 20px;
 }
 li > a:hover, input[type="submit"]:hover {
-    background-color: rgb(6, 159, 118);
-    color: aliceblue;
+    background-color: lightgray;
+    color: rgb(14, 15, 16);
     border-radius : 10px;
     padding: 10px;
 }
@@ -68,7 +68,8 @@ section{
 
 }
 #home-images, #trending-images, #new-images, #top-100-images, #artists-images{
-    width: 70%;
+    margin: auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -81,4 +82,22 @@ section{
     background-size: cover;
     color: aliceblue;
     padding-bottom: 800px;
+}
+.song-card, .artist-card{
+    background-color: lightgray;
+    border-radius: 15px;
+    margin: 15px;
+    width: 20%;
+    height: 30%;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+img.artist-img{
+    border-radius: 50%;
 }
