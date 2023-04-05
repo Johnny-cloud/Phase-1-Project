@@ -49,10 +49,17 @@ document.addEventListener("DOMContentLoaded", () => {
         let titleP =  document.createElement("p");
         let img =  document.createElement("img");
         let artistP =  document.createElement("p");
+        let btnDiv = document.createElement("div");
+        let likeBtn = document.createElement("button");
+        let addFavBtn = document.createElement("button");
 
         titleP.textContent = song.title;
         img.src = song.image;
         artistP.textContent = song.artist;
+        likeBtn.textContent = "Like";
+        addFavBtn.textContent = "Add to Playlist";
+        btnDiv.append(likeBtn);
+        btnDiv.append(addFavBtn);
 
 
 
@@ -62,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         div.append(titleP);
         div.append(img);
         div.append(artistP);
+        div.append(btnDiv);
 
         sectImg.append(div);
 

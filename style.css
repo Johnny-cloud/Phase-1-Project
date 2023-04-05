@@ -77,7 +77,8 @@ section{
 } 
 #home{
     width: 100%;
-    background: url("./images/headPhones1.jpg");
+    background: url("./images/music2.jpg");
+    opacity: 0.8;
     background-repeat: no-repeat;
     background-size: cover;
     color: aliceblue;
@@ -100,4 +101,9 @@ img{
 }
 img.artist-img{
     border-radius: 50%;
+}
+button{
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 16px;
 }
