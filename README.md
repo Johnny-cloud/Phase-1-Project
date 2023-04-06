@@ -15,8 +15,24 @@ A user can view the new songs, trending, and the top 100. The user can like a so
 * Javascript
 * Json server
 * Json
+* Rapid API
+* Shazam API
+
+## Behavioral Driven Development
+
+When a user hovers over a song, the "like" and "Add to playlist" buttons are shown.
+When the user clicks on the "like" button, the song is added to the "My Favorites" section where a user can view it when they navigate to the section.
+When the user hovers over the song on "My Favorites" section, the "Remove" button appears. A user can remove the song by clicking on the button.
+When the user clicks on the "Add to playlist" button, the song is added to the "My Playlist" section where a user can view it when they navigate to the section.
+When the user hovers over the song on "My Playlist" section, the "Remove" button appears. A user can remove the song by clicking on the button.
 
 ## How to run the project
+
+### Option i (On Github)
+
+    Click on the livelink to see how the project works
+
+### Option ii (On your local server)
 
 1. Make sure you have node installed on your machine.
 2. Download the json-server using the command "npm install -g json-server". This will ensure the server is installed globally on the machine.
