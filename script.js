@@ -18,9 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         let artist = document.querySelector("#artist-name").value.toLowerCase() ;
         document.querySelector("#artist-name").value = "";
-
+        document.querySelector("#searched-term > h1").textContent = "Fetching data .............";
         searchArtist(artist);
-        window.location.hash = "#searched-artist-image";
+        window.location.hash = "#searched-image";
+
     })
 
 
@@ -189,20 +190,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function searchArtist(artistName){
         
         if(artistName){
-            // fetch(artistsUrl)
-            // .then(res => res.json())
-            // .then(data => {
-            //     let artist  = data.find(artist => artist.name.toLowerCase().includes(artistName));
-            //    createArtistCard(artist, searchedArtistImg);
 
-            //    if(searchedArtistImg.children.length > 1){
-            //     searchedArtistImg.removeChild(searchedArtistImg.children[0])
-            //     console.log(searchedArtistImg.children.length);
-            // }
-
-            // })
-            // .catch(err => console.log(err))
-
+            while(searchedArtistImg.children.length){
+                searchedArtistImg.removeChild(searchedArtistImg.children[0])
+            }
          
             const options = {
                 method: 'GET',
@@ -217,7 +208,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 .then(response => {
                     console.log(response.artists.hits);
                     console.log(response.tracks.hits);
-                    response.tracks.hits.forEach(track => createSearchCard(track))
+                    response.tracks.hits.forEach(track => createSearchCard(track));
+                    document.querySelector("#searched-term > h1").textContent = "Results";
+
                 } )
                 .catch(err => console.error(err));
         }
@@ -225,15 +218,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function createSearchCard(track) {
+
+
         let div = document.createElement("div");
         let titleP =  document.createElement("p");
         let img =  document.createElement("img");
         let artistP =  document.createElement("p");
       
 
-        titleP.textContent = track.track.share.title;
-        img.src = track.track.images.background;
-        artistP.textContent = track.track.share.subtitle;
+        titleP.textContent = track.track.title;
+        img.src = track.track.share.image;
+        artistP.textContent = track.track.subtitle;
         img.className = "artist-img";
       
 
