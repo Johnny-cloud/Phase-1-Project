@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    let trendingUrl = "http://localhost:3000/trending";
-    let newUrl = "http://localhost:3000/new";
-    let top100Url = "http://localhost:3000/top-100";
-    let artistsUrl = "http://localhost:3000/artists";
+    let trendingUrl = "http://localhost:9999/.netlify/functions/trending/";
+    let newUrl = "http://localhost:9999/.netlify/functions/db/new";
+    let top100Url = "http://localhost:9999/.netlify/functions/db/top-100";
+    let artistsUrl = "http://localhost:9999/.netlify/functions/db/artists";
 
     let trendingImgs = document.querySelector("#trending-images");
     let newImgs = document.querySelector("#new-images");
@@ -32,7 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function fetchTrending(){
         fetch(trendingUrl)
         .then(res => res.json())
-        .then(data => data.forEach(song => createSongCard(song, trendingImgs)))
+        .then(data => {
+            console.log(data);
+            data.forEach(song => createSongCard(song, trendingImgs))
+        })
         .catch(err => console.log(err))
     }
 

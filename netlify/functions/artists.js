@@ -1,5 +1,4 @@
-{
-  "artists" : [
+let response = [
     {   
         "id" : 1,
         "name" : "Bruno mars",
@@ -50,10 +49,16 @@
         "name":"Ayra Starr",
         "image":"https://wallpapercave.com/dwp1x/wp11603696.jpg"
     }
-
-
 ]
+
+exports.handler = async (event, context) => {
+    return {
+        statusCode : 200,
+        body : JSON.stringify(response),
+        headers: {
+			'Content-Type': 'application/json; charset=utf-8',
+            'Access-Control-Allow-Origin': '*',
+		},
+    }
+
 }
-
-
-
