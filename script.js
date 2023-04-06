@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     let trendingUrl = "http://localhost:9999/.netlify/functions/trending/";
-    let newUrl = "http://localhost:9999/.netlify/functions/db/new";
-    let top100Url = "http://localhost:9999/.netlify/functions/db/top-100";
-    let artistsUrl = "http://localhost:9999/.netlify/functions/db/artists";
+    let newUrl = "http://localhost:9999/.netlify/functions/new";
+    let top100Url = "http://localhost:9999/.netlify/functions/top-100";
+    let artistsUrl = "http://localhost:9999/.netlify/functions/artists";
 
     let trendingImgs = document.querySelector("#trending-images");
     let newImgs = document.querySelector("#new-images");
