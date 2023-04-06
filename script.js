@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let artistsImgs = document.querySelector("#artists-images");
     let favImgs = document.querySelector("#favorites-images");
     let playlistImgs = document.querySelector("#my-playlist-images");
-    let searchedArtistImg = document.querySelector("#searched-artist-image");
+    let searchedArtistImg = document.querySelector("#searched-image");
 
     let searchArtistForm = document.querySelector("#search-artist");
     searchArtistForm.addEventListener('submit', (e) => {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch(trendingUrl)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
+            
             data.forEach(song => createSongCard(song, trendingImgs))
         })
         .catch(err => console.log(err))
@@ -189,21 +189,64 @@ document.addEventListener("DOMContentLoaded", () => {
     function searchArtist(artistName){
         
         if(artistName){
-            fetch(artistsUrl)
-            .then(res => res.json())
-            .then(data => {
-                let artist  = data.find(artist => artist.name.toLowerCase().includes(artistName));
-               createArtistCard(artist, searchedArtistImg);
+            // fetch(artistsUrl)
+            // .then(res => res.json())
+            // .then(data => {
+            //     let artist  = data.find(artist => artist.name.toLowerCase().includes(artistName));
+            //    createArtistCard(artist, searchedArtistImg);
 
-               if(searchedArtistImg.children.length > 1){
-                searchedArtistImg.removeChild(searchedArtistImg.children[0])
-                console.log(searchedArtistImg.children.length);
-            }
+            //    if(searchedArtistImg.children.length > 1){
+            //     searchedArtistImg.removeChild(searchedArtistImg.children[0])
+            //     console.log(searchedArtistImg.children.length);
+            // }
 
-            })
-            .catch(err => console.log(err))
+            // })
+            // .catch(err => console.log(err))
+
+         
+            const options = {
+                method: 'GET',
+                headers: {
+                    'X-RapidAPI-Key': 'f702601134mshf79e68adfef5401p1bb48djsn4788d2007278',
+                    'X-RapidAPI-Host': 'shazam.p.rapidapi.com'
+                }
+            };
+
+            fetch(`https://shazam.p.rapidapi.com/search?term=${artistName}&locale=en-US&offset=0&limit=5`, options)
+                .then(response => response.json())
+                .then(response => {
+                    console.log(response.artists.hits);
+                    console.log(response.tracks.hits);
+                    response.tracks.hits.forEach(track => createSearchCard(track))
+                } )
+                .catch(err => console.error(err));
         }
        
+    }
+
+    function createSearchCard(track) {
+        let div = document.createElement("div");
+        let titleP =  document.createElement("p");
+        let img =  document.createElement("img");
+        let artistP =  document.createElement("p");
+      
+
+        titleP.textContent = track.track.share.title;
+        img.src = track.track.images.background;
+        artistP.textContent = track.track.share.subtitle;
+        img.className = "artist-img";
+      
+
+
+        div.className = "song-card";
+        div.background = `url(${img.src})`;
+        
+
+        div.append(titleP);
+        div.append(img);
+        div.append(artistP);
+        searchedArtistImg.append(div);
+
     }
 
 })
