@@ -11,6 +11,18 @@ document.addEventListener("DOMContentLoaded", () => {
     let artistsImgs = document.querySelector("#artists-images");
     let favImgs = document.querySelector("#favorites-images");
     let playlistImgs = document.querySelector("#my-playlist-images");
+    let searchedArtistImg = document.querySelector("#searched-artist-image");
+
+    let searchArtistForm = document.querySelector("#search-artist");
+    searchArtistForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let artist = document.querySelector("#artist-name").value.toLowerCase() ;
+        document.querySelector("#artist-name").value = "";
+
+        searchArtist(artist);
+        window.location.hash = "#searched-artist-image";
+    })
+
 
     fetchTrending();
     fetchNew();
@@ -87,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    function createArtistCard(artist,sectImg) {
+    function createArtistCard(artist, sectImg) {
         let div = document.createElement("div");
         let img =  document.createElement("img");
         let artistP =  document.createElement("p");
@@ -169,6 +181,26 @@ document.addEventListener("DOMContentLoaded", () => {
         div.append(btnDiv);
         playlistImgs.append(div);
 
+    }
+
+    function searchArtist(artistName){
+        
+        if(artistName){
+            fetch(artistsUrl)
+            .then(res => res.json())
+            .then(data => {
+                let artist  = data.find(artist => artist.name.toLowerCase().includes(artistName));
+               createArtistCard(artist, searchedArtistImg);
+
+               if(searchedArtistImg.children.length > 1){
+                searchedArtistImg.removeChild(searchedArtistImg.children[0])
+                console.log(searchedArtistImg.children.length);
+            }
+
+            })
+            .catch(err => console.log(err))
+        }
+       
     }
 
 })

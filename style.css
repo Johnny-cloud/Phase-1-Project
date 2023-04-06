@@ -2,7 +2,7 @@
 body{
     margin: 0px;
     padding: 0;
-    background-color: rgb(137, 125, 125);
+    background-color: black;
     color: rgb(33, 1, 1);
     display: flex;
     flex-direction: row;
@@ -72,7 +72,7 @@ main{
     padding-left: 100px;
     height:max-content;
     margin-left: 200px; /* Same as the width of the sidebar */
-    background-color: rgb(23, 20, 20);
+    background-color: black;
     color:aliceblue;
     text-align: center;
 }
