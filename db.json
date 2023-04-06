@@ -109,19 +109,19 @@
                 "id" : 8,
                 "artist" : "Khaligraph Jones ft Harmonize",
                 "title" : "Kwame",
-                "image" :""
+                "image" :"https://i.ytimg.com/vi/V4rwhXEoarQ/maxresdefault.jpg"
             },
             {
                 "id" : 9,
-                "artist" : "",
-                "title" : "",
-                "image" :""
+                "artist" : "Octopizzo",
+                "title" : "Flex",
+                "image" :"https://i.ytimg.com/vi/WA7VjhBMPrs/maxresdefault.jpg"
             },
             {
                 "id" : 10,
-                "artist" : "",
-                "title" : "",
-                "image" :""
+                "artist" : "Fathermoh",
+                "title" : "Kaskie vibaya",
+                "image" :"https://i.ytimg.com/vi/ksBpvcbjTXM/hqdefault.jpg"
             }
         ],
         "top-100" : [
@@ -129,24 +129,24 @@
                  {  "id" : 1,
                     "rank": "1",
                     "title": "Old Town Road",
-                    "artist": "Lil Nas X Featuring Billy Ray Cyrus",
+                    "artist": "Lil Nas X ft Billy Ray Cyrus",
                     "weeks at no.1": "5",
                     "last week": "1",
                     "peak position": "1",
                     "weeks on chart": "9",
                     "detail": "same",
-                    "image":""
+                    "image":"https://i.ytimg.com/vi/r7qovpFAGrQ/maxresdefault.jpg"
                 },
                  {  
                     "id" : 2,
                     "rank": "2",
                     "title": "ME!",
-                    "artist": "Taylor Swift Featuring Brendon Urie",
+                    "artist": "Taylor Swift ft Brendon Urie",
                     "last week": "100",
                     "peak position": "2",
                     "weeks on chart": "2",
                     "detail": "up",
-                    "image":""
+                    "image":"https://townsquare.media/site/1096/files/2019/04/pjimage-5-6.jpg?w=980&q=75"
                 },
                  {
                     "id": 3,
@@ -157,7 +157,7 @@
                     "peak position": "2",
                     "weeks on chart": "19",
                     "detail": "down",
-                    "image":""
+                    "image":"https://i.ytimg.com/vi/lwWHn61Ty_A/maxresdefault.jpg"
                 },
                 {
                     "id":4,
@@ -168,7 +168,7 @@
                     "peak position": "1",
                     "weeks on chart": "9",
                     "detail": "up",
-                    "image":""
+                    "image":"https://i.ytimg.com/vi/CnAmeh0-E-U/maxresdefault.jpg"
                 },
                 {   
                     "id":5,
@@ -179,7 +179,7 @@
                     "peak position": "1",
                     "weeks on chart": "28",
                     "detail": "down",
-                    "image":""
+                    "image":"https://i.ytimg.com/vi/3JK3pTVg9h8/maxresdefault.jpg"
                 },
                {
                     "id" : 6,
@@ -190,7 +190,7 @@
                     "peak position": "1",
                     "weeks on chart": "15",
                     "detail": "down",
-                    "image":""
+                    "image":"https://i.ytimg.com/vi/QYh6mYIJG2Y/mqdefault.jpg"
                 },
                 {
                     "id" : 7,
@@ -201,7 +201,7 @@
                     "peak position": "1",
                     "weeks on chart": "30",
                     "detail": "down",
-                    "image":""
+                    "image":"https://i.ytimg.com/vi/ZAfAud_M_mg/maxresdefault.jpg"
                 },
                  {
                     "id":8,
@@ -212,7 +212,7 @@
                     "peak position": "7",
                     "weeks on chart": "16",
                     "detail": "down",
-                    "image":""
+                    "image":"https://i.ytimg.com/vi/av5JD1dfj_c/maxresdefault.jpg"
                 },
                 {   
                     "id":9,
@@ -223,7 +223,7 @@
                     "peak position": "7",
                     "weeks on chart": "5",
                     "detail": "same",
-                    "image":""
+                    "image":"https://i.ytimg.com/vi/DyDfgMOUjCI/maxresdefault.jpg"
                 },
                 {   "id":10,
                     "rank": "10",
@@ -233,7 +233,7 @@
                     "peak position": "8",
                     "weeks on chart": "12",
                     "detail": "down",
-                    "image":""
+                    "image":"https://i.ytimg.com/vi/hE2Ira-Cwxo/maxresdefault.jpg"
                 }
                 
 
@@ -267,28 +267,28 @@
         },
         {
             "id":6,
-            "name":"Rayvanny",
-            "image":""
+            "name":"Wizkid",
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWFsRxAXYlHQBNn1FujE0MiUKOKH4Wf95zrQ&usqp=CAU"
         },
         {
             "id":7,
             "name":"Ada Ehi",
-            "image":""
+            "image":"https://res.6chcdn.feednews.com/assets/v2/500d74c73dec8ad4d8b2734d6ed67f5c?quality=uhq&format=webp&resize=720"
         },
         {
             "id":8,
             "name" : "Halsey",
-            "image":""
+            "image":"https://c4.wallpaperflare.com/wallpaper/507/408/62/ashley-frangipane-photo-halsey-5k-wallpaper-preview.jpg"
         },
         {
             "id":9,
             "name":"Sinach",
-            "image":""
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt4VMb_wBP9otM0iAKc8hIEpWkdYnpG_Rrzg&usqp=CAU"
         },
         {
             "id":10,
             "name":"Ayra Starr",
-            "image":""
+            "image":"https://wallpapercave.com/dwp1x/wp11603696.jpg"
         }
 
 
