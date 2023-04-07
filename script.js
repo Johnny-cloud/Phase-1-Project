@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", () => {
     let favImgs = document.querySelector("#favorites-images");
     let playlistImgs = document.querySelector("#my-playlist-images");
     let searchedArtistImg = document.querySelector("#searched-image");
-    let recommendedImgs = document.querySelector("#recommended-images");
 
     let searchArtistForm = document.querySelector("#search-artist");
     searchArtistForm.addEventListener('submit', (e) => {
@@ -25,28 +24,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     })
 
-    fetchRecommendedSongs();
+
     fetchTrending();
     fetchNew();
     fetchTop100();
     fetchArtists();
 
-    function fetchRecommendedSongs(){
-        const options = {
-            method: 'GET',
-            headers: {
-                'X-RapidAPI-Key': 'f702601134mshf79e68adfef5401p1bb48djsn4788d2007278',
-                'X-RapidAPI-Host': 'genius-song-lyrics1.p.rapidapi.com'
-            }
-        };
-        
-        fetch('https://genius-song-lyrics1.p.rapidapi.com/song/recommendations/?id=2396871', options)
-            .then(response => response.json())
-            .then(response => {
-                console.log(response.song_recommendations.recommendations);
-                response.song_recommendations.recommendations.forEach(rec => createRecommendedCard(rec))
-            })
-            .catch(err => console.error(err));
+    function fetchRecommended(){
+
     }
 
     function fetchTrending(){
@@ -149,23 +134,9 @@ document.addEventListener("DOMContentLoaded", () => {
         let btnDiv = document.createElement("div");
         let removeBtn = document.createElement("button");
 
-        if(song.title){
-            titleP.textContent = song.title;
-        }else{
-            titleP.textContent = song.recommended_song.full_title;
-        }
-        if(song.image){
-           img.src = song.image; 
-        }else{
-            img.src = song.recommended_song.header_image_thumbnail_url; 
-        }
-        if(song.artist){
-            artistP.textContent = song.artist;
-        }
-        else{
-            artistP.textContent = song.recommended_song.artist_names;
-        }
-        
+        titleP.textContent = song.title;
+        img.src = song.image;
+        artistP.textContent = song.artist;
         removeBtn.textContent = "Remove";
 
         removeBtn.addEventListener('click', () => {
@@ -195,24 +166,9 @@ document.addEventListener("DOMContentLoaded", () => {
         let btnDiv = document.createElement("div");
         let removeBtn = document.createElement("button");
 
-        if(song.title){
-            titleP.textContent = song.title;
-        }else{
-            titleP.textContent = song.recommended_song.full_title;
-        }
-        if(song.image){
-           img.src = song.image; 
-        }else{
-            img.src = song.recommended_song.header_image_thumbnail_url; 
-        }
-        if(song.artist){
-            artistP.textContent = song.artist;
-        }
-        else{
-            artistP.textContent = song.recommended_song.artist_names;
-        }
-        
-        
+        titleP.textContent = song.title;
+        img.src = song.image;
+        artistP.textContent = song.artist;
         removeBtn.textContent = "Remove";
 
         removeBtn.addEventListener('click', () => {
@@ -262,6 +218,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 } )
                 .catch(err => console.error(err));
         }
+        const options = {
+            method: 'GET',
+            headers: {
+                'X-RapidAPI-Key': 'f702601134mshf79e68adfef5401p1bb48djsn4788d2007278',
+                'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
+            }
+        };
+        
+        fetch(`https://spotify23.p.rapidapi.com/search/?q=${artistName}&type=multi&offset=0&limit=10&numberOfTopResults=5`, options)
+            .then(response => response.json())
+            .then(response => {
+                console.log(response.albums.items);
+                response.albums.items.forEach(item => createSearchCard2(item));
+                document.querySelector("#searched-term > h1").textContent = "Results";
+            })
+            .catch(err => console.error(err));
        
     }
 
@@ -291,37 +263,21 @@ document.addEventListener("DOMContentLoaded", () => {
         searchedArtistImg.append(div);
 
     }
-
-    function createRecommendedCard(song) {
+    function createSearchCard2(track) {
 
 
         let div = document.createElement("div");
         let titleP =  document.createElement("p");
         let img =  document.createElement("img");
         let artistP =  document.createElement("p");
-        let btnDiv = document.createElement("div");
-        let likeBtn = document.createElement("button");
-        let addToPlaylistBtn = document.createElement("button");
-
-        titleP.textContent = song.recommended_song.artist_names;
-        img.src = song.recommended_song.header_image_thumbnail_url;        ;
-        artistP.textContent = song.recommended_song.full_title;
-        
       
-        likeBtn.textContent = "Like";
-        addToPlaylistBtn.textContent = "Add to Playlist";
-        btnDiv.className = "like-fav-btns";
 
-        likeBtn.addEventListener('click', () => {
-            addToFavorites(song);
-        })
+        titleP.textContent = track.data.artists.items[0].profile.name;
+        img.src = track.data.coverArt.sources[0].url;
+        artistP.textContent = track.data.name;
+        img.className = "artist-img";
+      
 
-        addToPlaylistBtn.addEventListener('click', () => {
-            addToPlaylist(song);
-        })
-
-        btnDiv.append(likeBtn);
-        btnDiv.append(addToPlaylistBtn);
 
         div.className = "song-card";
         div.background = `url(${img.src})`;
@@ -330,8 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
         div.append(titleP);
         div.append(img);
         div.append(artistP);
-        div.append(btnDiv);
-        recommendedImgs.append(div);
+        searchedArtistImg.append(div);
 
     }
 
