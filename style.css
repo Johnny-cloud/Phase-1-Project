@@ -69,7 +69,7 @@ input[type="text"]:hover{
     margin-left: -10px;
     margin-right: 10px;
 }
-input[type = "submit"]:hover{
+input:hover{
     font-size: 17px;
     padding: 6px;
 }
@@ -90,7 +90,7 @@ section{
 
 }
 #home-images, #trending-images, #new-images, #top-100-images, #artists-images, #favorites-images,
-#searched-image, #my-playlist-images, #recommended-images{
+#searched-image, #playlist-images, #recommended-images{
     margin: auto;
     width: 100%;
     display: flex;
