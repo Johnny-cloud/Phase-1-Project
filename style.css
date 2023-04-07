@@ -54,14 +54,20 @@ li > a:hover{
     padding: 2px;
 }
 input{
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 10px;
     margin:5px;
     padding: 5px;
 }
 input[type="text"]{
-    margin-left: 0px;
-    width: 80%;
+    margin-left: -10px;
+    width: 150%;
+    height: 10%;
+    
+}
+input[type="text"]:hover{
+    margin-left: -10px;
+    margin-right: 10px;
 }
 input[type = "submit"]:hover{
     font-size: 17px;
