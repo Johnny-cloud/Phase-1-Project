@@ -30,7 +30,7 @@ A user can view the new songs, trending, and the top 100. The user can like a so
 
 ### Option i (On Github)
 
-    Click on the livelink to see how the project works
+    Click on the livelink to see how the project works : https://johnny-cloud.github.io/Phase-1-Project/
 
 ### Option ii (On your local server)
 
