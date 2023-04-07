@@ -83,7 +83,7 @@ section{
 
 }
 #home-images, #trending-images, #new-images, #top-100-images, #artists-images, #favorites-images,
-#searched-image, #my-playlist-images{
+#searched-image, #my-playlist-images, #recommended-images{
     margin: auto;
     width: 100%;
     display: flex;
