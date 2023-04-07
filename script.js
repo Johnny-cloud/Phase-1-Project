@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let top100Imgs = document.querySelector("#top-100-images");
     let artistsImgs = document.querySelector("#artists-images");
     let favImgs = document.querySelector("#favorites-images");
-    let playlistImgs = document.querySelector("#my-playlist-images");
+    let playlistImgs = document.querySelector("#playlist-images");
     let searchedArtistImg = document.querySelector("#searched-image");
 
     let searchArtistForm = document.querySelector("#search-artist");
