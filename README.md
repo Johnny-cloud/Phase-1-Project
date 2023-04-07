@@ -28,11 +28,11 @@ A user can view the new songs, trending, and the top 100. The user can like a so
 
 ## How to run the project
 
-### Option i (On Github)
+### On Github
 
     Click on the livelink to see how the project works : https://johnny-cloud.github.io/Phase-1-Project/
 
-### Option ii (On your local server)
+### On your local server
 
 1. Make sure you have node installed on your machine.
 2. Download the json-server using the command "npm install -g json-server". This will ensure the server is installed globally on the machine.
