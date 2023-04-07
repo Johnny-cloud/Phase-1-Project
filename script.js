@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     let top100Url = "https://jonny-cloud-my-music.netlify.app/.netlify/functions/top-100";
     let artistsUrl = "https://jonny-cloud-my-music.netlify.app/.netlify/functions/artists";
 
+    //html sections for the images display
     let trendingImgs = document.querySelector("#trending-images");
     let newImgs = document.querySelector("#new-images");
     let top100Imgs = document.querySelector("#top-100-images");
@@ -13,7 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let playlistImgs = document.querySelector("#playlist-images");
     let searchedArtistImg = document.querySelector("#searched-image");
 
+    //search form
     let searchArtistForm = document.querySelector("#search-artist");
+
     searchArtistForm.addEventListener('submit', (e) => {
         e.preventDefault();
         let artist = document.querySelector("#artist-name").value.toLowerCase() ;
@@ -30,9 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
     fetchTop100();
     fetchArtists();
 
-    function fetchRecommended(){
-
-    }
 
     function fetchTrending(){
         fetch(trendingUrl)
@@ -237,6 +237,7 @@ document.addEventListener("DOMContentLoaded", () => {
        
     }
 
+    //create image for the searched item
     function createSearchCard(track) {
 
 
@@ -263,6 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
         searchedArtistImg.append(div);
 
     }
+    //uses the spotify api
     function createSearchCard2(track) {
 
 
